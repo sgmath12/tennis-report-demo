@@ -3,9 +3,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>코트 노트 · 경기 리포트</title>
-<link rel="stylesheet" href="rally-report.css?v=20261005-body">
-<script src="rally-data.js?v=20261005-body" defer></script>
-<script src="rally-report.js?v=20261005-body" defer></script>
+<link rel="stylesheet" href="rally-report.css?v=20261005-stats">
+<script src="rally-data.js?v=20261005-stats" defer></script>
+<script src="rally-report.js?v=20261005-stats" defer></script>
 <style>
   :root { color-scheme: light; }
   html { -webkit-text-size-adjust: 100%; }
@@ -1129,16 +1129,17 @@
     <div class="hero">
       <div class="league-head">
         <div>
-          <div class="demo-flag">가상 데이터 데모</div>
+          <div class="demo-flag">가상 데이터</div>
           <div class="eyebrow" style="margin-top:16px">클럽 통계 · 최근 90일</div>
-      <h1>클럽 통계</h1>
+          <h1>클럽 통계</h1>
+          <p class="lead" style="margin-top:12px">선수별 승률과 범실률을 비교하는 예시입니다. 표의 항목을 누르면 정렬됩니다.</p>
         </div>
-        <div class="league-count">18명 · 176경기<br>복식 경기만 집계</div>
+        <div class="league-count">18명 · 176경기<br>복식 · 가상 기록</div>
       </div>
       <div class="leaders">
-        <div class="leader"><span class="label">승률 1위</span><b>박서윤 <span class="value">78.6%</span></b></div>
-        <div class="leader"><span class="label">범실이 가장 적은 선수</span><b>정현우 <span class="value">14.8%</span></b></div>
-        <div class="leader"><span class="label">네트 승률 1위</span><b>최유진 <span class="value">79.4%</span></b></div>
+        <div class="leader"><span class="label">최고 승률</span><b>박서윤 <span class="value">78.6%</span></b></div>
+        <div class="leader"><span class="label">최저 범실률</span><b>정현우 <span class="value">14.8%</span></b></div>
+        <div class="leader"><span class="label">최고 네트 승률</span><b>최유진 <span class="value">79.4%</span></b></div>
       </div>
     </div>
 
@@ -1152,15 +1153,15 @@
             <th><button class="sort-btn" data-stat="name">선수</button></th>
             <th><button class="sort-btn" data-stat="matches">경기</button></th>
             <th><button class="sort-btn active" data-stat="win">승률 ↓</button></th>
-            <th><button class="sort-btn" data-stat="error">전체 에러율</button></th>
-            <th><button class="sort-btn" data-stat="fh">포핸드 에러</button></th>
-            <th><button class="sort-btn" data-stat="ret">리턴 성공</button></th>
+            <th><button class="sort-btn" data-stat="error">전체 범실률</button></th>
+            <th><button class="sort-btn" data-stat="fh">포핸드 범실률</button></th>
+            <th><button class="sort-btn" data-stat="ret">리턴 성공률</button></th>
             <th><button class="sort-btn" data-stat="net">네트 승률</button></th>
           </tr></thead>
           <tbody id="league-body"></tbody>
         </table>
       </div>
-      <p class="league-note">이름과 수치는 화면 예시를 위한 가상 데이터입니다. 에러율은 낮을수록, 나머지 비율은 높을수록 좋습니다.</p>
+      <p class="league-note">이름과 기록은 모두 가상입니다. 실제 경기 분석 결과와는 별개입니다.</p>
     </section>
   </section>
 

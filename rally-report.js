@@ -40,5 +40,4 @@
   video.addEventListener('error',()=>{document.getElementById('rally-now').textContent='영상을 불러오지 못했습니다. 새로고침 후 다시 확인해주세요.';document.getElementById('rally-now').classList.add('rally-flash');});
   document.querySelectorAll('nav.tabs button').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.screen!=='match')video.pause();}));
   renderEvents();renderPlayers();
-  document.querySelector('#stats .league-note').textContent='이 탭의 이름과 수치는 가상 비교 예시입니다. 실제 경기 리포트의 검수 통계와 별도로 표시합니다.';
 })();
