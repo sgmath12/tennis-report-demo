@@ -1,4 +1,9 @@
-<title>호영 서브 리포트</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>코트 노트 · 경기 리포트</title>
+<link rel="stylesheet" href="rally-report.css">
+<script src="rally-data.js" defer></script>
+<script src="rally-report.js" defer></script>
 <style>
   :root { color-scheme: light; }
   html { -webkit-text-size-adjust: 100%; }
@@ -1210,171 +1215,9 @@
     </section>
   </section>
 
-  <!-- ============ 가상 경기 리포트 ============ -->
+  <!-- ============ 실제 경기 리포트 ============ -->
   <section class="screen on" id="match" role="tabpanel">
-    <div class="hero">
-      <div class="match-lede">
-        <div>
-          <div class="demo-flag">가상 데이터 데모</div>
-          <div class="eyebrow" style="margin-top:16px">복식 경기 분석 · 20분 48초 · 1세트</div>
-          <h1>포핸드 범실이<br>베이스라인 뒤에서 몰렸습니다</h1>
-          <p class="lead" style="margin-top:14px">
-            포핸드 범실 <b class="hl">10개 중 7개</b>가 베이스라인 뒤에서 나왔습니다.
-            반대로 네트에 먼저 들어간 포인트는 <b class="hl">17개 중 12개</b>를 이겼습니다.
-            원인을 추정하지 않고, 영상에서 확인되는 위치와 결과만 정리했습니다.
-          </p>
-        </div>
-        <aside class="scorecard" aria-label="가상 경기 스코어">
-          <div class="meta">토요일 클럽 복식 · 1세트</div>
-          <div class="scoreline mine"><b>호영 / 파트너</b><strong>6</strong></div>
-          <div class="scoreline"><b>상대 팀</b><strong>4</strong></div>
-          <div class="sample-note">총 58포인트 · 호영 관여 샷 77개 · 게임 영상 1개</div>
-        </aside>
-      </div>
-      <div class="chips">
-        <div class="chip"><i>형식</i><b>복식 · 노애드</b></div>
-        <div class="chip"><i>영상</i><b class="num">20:48 / 1080p</b></div>
-        <div class="chip"><i>내 위치</i><b>듀스 코트</b></div>
-        <div class="chip"><i>신뢰도</i><b>중간 · 1세트</b></div>
-      </div>
-    </div>
-
-    <section class="block">
-      <div class="eyebrow">경기 요약</div>
-      <h2>이겼지만, 반복하면 잡힐 약점이 하나 보입니다</h2>
-      <p class="lead">일반인 경기는 짧기 때문에 승률 하나보다 <b class="hl">같은 상황에서 반복된 선택과 결과</b>를 봅니다.</p>
-      <div class="match-kpis">
-        <div class="match-kpi">
-          <div class="k">내 포인트 기여</div><div class="v">+3<small>점</small></div>
-          <div class="s">위너·유도 범실 15<br>직접 범실 12</div>
-        </div>
-        <div class="match-kpi bad">
-          <div class="k">포핸드 비강제 범실</div><div class="v">10<small>/ 29샷</small></div>
-          <div class="s">가상 클럽 복식 기준 19%<br>이번 경기 34%</div>
-        </div>
-        <div class="match-kpi good">
-          <div class="k">네트 포인트 승률</div><div class="v">71<small>%</small></div>
-          <div class="s">12 / 17포인트<br>전진했을 때 우세</div>
-        </div>
-        <div class="match-kpi">
-          <div class="k">첫 서브 득점률</div><div class="v">64<small>%</small></div>
-          <div class="s">7 / 11포인트<br>더블 폴트 1개</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="eyebrow">우선순위</div>
-      <h2>이번 경기에서 보인 세 가지</h2>
-      <div class="card">
-        <article class="finding">
-          <div class="finding-rank">확인<b>01</b></div>
-          <div>
-            <h3>포핸드 범실이 뒤에서 몰렸습니다</h3>
-            <p>포핸드 범실 10개 중 7개가 베이스라인 뒤에서 나왔습니다.</p>
-          </div>
-          <div class="finding-stat"><b>7 / 10</b><span>베이스라인 뒤</span></div>
-        </article>
-        <article class="finding">
-          <div class="finding-rank">강점<b style="color:var(--ok)">02</b></div>
-          <div>
-            <h3>앞으로 들어가면 득점률이 높았습니다</h3>
-            <p>앞으로 들어간 포인트는 71%, 뒤에 남은 포인트는 39%를 이겼습니다.</p>
-          </div>
-          <div class="finding-stat"><b style="color:var(--ok)">+32%p</b><span>네트 vs 베이스라인</span></div>
-        </article>
-        <article class="finding">
-          <div class="finding-rank">안정<b style="color:var(--court-2)">03</b></div>
-          <div>
-            <h3>백핸드 리턴은 그대로</h3>
-            <p>8개 중 7개가 들어갔습니다. 지금처럼 깊게만 보냅니다.</p>
-          </div>
-          <div class="finding-stat"><b>88% 인</b><span>7 / 8 리턴 성공</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="eyebrow">샷별 진단</div>
-      <h2>포핸드 범실만 경기 평균에서 벗어났습니다</h2>
-      <p class="lead">막대는 해당 샷 중 좋은 결과와 직접 범실의 비율입니다. 회색은 중립적으로 랠리가 이어진 샷입니다.</p>
-      <div class="shot-grid">
-        <div class="card shot-card">
-          <h3>호영이 친 77개 샷의 결과</h3>
-          <div class="shot-row bad"><span>포핸드</span><div class="track"><div class="fill" style="width:34%"></div></div><span class="n">10 / 29</span></div>
-          <div class="shot-row"><span>백핸드</span><div class="track"><div class="fill" style="width:17%"></div></div><span class="n">3 / 18</span></div>
-          <div class="shot-row"><span>리턴</span><div class="track"><div class="fill" style="width:19%"></div></div><span class="n">3 / 16</span></div>
-          <div class="shot-row good"><span>발리·오버헤드</span><div class="track"><div class="fill" style="width:67%"></div></div><span class="n">8 / 12 득점</span></div>
-          <div class="shot-row"><span>서브</span><div class="track"><div class="fill" style="width:6%"></div></div><span class="n">1 / 18 DF</span></div>
-          <div class="fignote" style="margin-top:18px">포핸드·백핸드·리턴 막대는 직접 범실률, 발리는 득점률, 서브는 더블 폴트율입니다.</div>
-        </div>
-        <div class="card shot-card">
-          <h3>포핸드 착지 구역 · 추적 24 / 29</h3>
-          <div class="court-map" aria-label="가상의 포핸드 착지 구역 히트맵">
-            <svg viewBox="0 0 360 255" role="img" aria-label="정확한 점이 아닌 구역별 포핸드 착지 분포">
-              <rect class="court-line" x="34" y="18" width="292" height="219"></rect>
-              <line class="court-line net" x1="34" y1="127.5" x2="326" y2="127.5"></line>
-              <line class="court-line" x1="180" y1="18" x2="180" y2="237"></line>
-              <line class="court-line" x1="72" y1="72" x2="288" y2="72"></line>
-              <line class="court-line" x1="72" y1="183" x2="288" y2="183"></line>
-              <rect class="heat-in" x="40" y="24" width="132" height="43" rx="7"></rect>
-              <text class="zone-count" x="106" y="45">8</text><text class="zone-note" x="106" y="58">깊은 크로스</text>
-              <rect class="heat-in" x="118" y="76" width="124" height="39" rx="7"></rect>
-              <text class="zone-count" x="180" y="96">6</text><text class="zone-note" x="180" y="108">중앙·짧은 공</text>
-              <rect class="heat-out" x="6" y="35" width="25" height="72" rx="7"></rect>
-              <rect class="heat-out" x="329" y="35" width="25" height="72" rx="7"></rect>
-              <text class="zone-count" x="18" y="67">5</text><text class="zone-note" x="18" y="82" transform="rotate(-90 18 82)">사이드 아웃</text>
-              <rect class="heat-out" x="105" y="2" width="150" height="14" rx="6"></rect>
-              <text class="zone-label" x="180" y="13">롱 3</text>
-              <rect class="heat-net" x="128" y="116" width="104" height="20" rx="7"></rect>
-              <text class="zone-label" x="180" y="131">네트 2</text>
-            </svg>
-          </div>
-          <div class="map-legend"><span><i style="background:var(--ok)"></i>코트 안 14</span><span><i style="background:var(--crit)"></i>아웃 8</span><span><i style="background:var(--warn)"></i>네트 2</span><span>추적 불가 5</span></div>
-          <div class="fignote" style="margin-top:9px">점 위치가 아니라 착지한 구역입니다. 점선 테두리는 영상에서 생기는 위치 오차를 뜻합니다.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="eyebrow">경기 흐름</div>
-      <h2>범실은 초반이 아니라 긴 포인트에서 몰렸습니다</h2>
-      <p class="lead">게임별 숫자는 호영의 직접 범실 수입니다. 7·8번째 게임에서 포핸드 범실 5개가 연속으로 나왔지만, 네트 플레이로 마지막 두 게임을 가져왔습니다.</p>
-      <div class="games" aria-label="게임별 스코어와 직접 범실">
-        <div class="game win"><div class="g">GAME 1</div><div class="score">1–0</div><div class="errs"><b>0</b>범실</div></div>
-        <div class="game loss"><div class="g">GAME 2</div><div class="score">1–1</div><div class="errs"><b>1</b>범실</div></div>
-        <div class="game win"><div class="g">GAME 3</div><div class="score">2–1</div><div class="errs"><b>1</b>범실</div></div>
-        <div class="game win"><div class="g">GAME 4</div><div class="score">3–1</div><div class="errs"><b>0</b>범실</div></div>
-        <div class="game loss"><div class="g">GAME 5</div><div class="score">3–2</div><div class="errs"><b>1</b>범실</div></div>
-        <div class="game win"><div class="g">GAME 6</div><div class="score">4–2</div><div class="errs"><b>1</b>범실</div></div>
-        <div class="game loss"><div class="g">GAME 7</div><div class="score">4–3</div><div class="errs"><b>3</b>포핸드 2</div></div>
-        <div class="game loss"><div class="g">GAME 8</div><div class="score">4–4</div><div class="errs"><b>4</b>포핸드 3</div></div>
-        <div class="game win"><div class="g">GAME 9</div><div class="score">5–4</div><div class="errs"><b>1</b>범실</div></div>
-        <div class="game win"><div class="g">GAME 10</div><div class="score">6–4</div><div class="errs"><b>0</b>범실</div></div>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="eyebrow">다음 경기</div>
-      <h2>같은 값만 다시 봅니다</h2>
-      <div class="plan-grid">
-        <article class="plan-step"><div class="day">01</div><h3>포핸드 범실</h3><p>전체 범실 수와 타구 위치.</p><span class="target">현재 · 10개</span></article>
-        <article class="plan-step"><div class="day">02</div><h3>네트 플레이</h3><p>들어간 포인트 수와 승률.</p><span class="target">현재 · 12 / 17</span></article>
-        <article class="plan-step"><div class="day">03</div><h3>백핸드 리턴</h3><p>코트에 들어간 리턴 수.</p><span class="target">현재 · 7 / 8</span></article>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="confidence">
-        <b>이 데모의 한계</b>
-        <p>위 숫자는 화면 구성을 보여주기 위해 만든 가상값이며 실제 영상 분석 결과가 아닙니다. 1세트는 선수의 장기 실력을 확정하기엔 짧지만, 같은 경기 안에서 여러 번 반복된 <b>상황–선택–결과</b>를 찾는 데는 쓸 수 있습니다. 고객용 리포트에서는 자동 판정 뒤 사람이 영상을 검수하고, 표본이 5회 미만인 항목은 결론 대신 관찰로 표시합니다.</p>
-      </div>
-    </section>
-
-    <div class="foot">
-      <p><b>가상 비교군</b> · 동호인 복식 1세트 480경기를 가정한 데모 분포. 실제 서비스에서는 성별·구력·복식 수준·코트 종류가 비슷한 경기끼리 비교합니다.</p>
-      <p><b>분석 단위</b> · 포인트 시작과 종료, 샷 종류, 타구 위치, 포지션, 결과를 기록하고 선수별로 집계합니다. 스코어만이 아니라 반복되는 패턴을 코칭 우선순위로 바꿉니다.</p>
-    </div>
+    <div class="hero"><h1>경기 리포트</h1><p>검수 기록을 불러오는 중입니다.</p><noscript>경기 리포트를 보려면 JavaScript를 켜주세요.</noscript></div>
   </section>
 
   <!-- ============ 두 사람 비교 ============ -->
