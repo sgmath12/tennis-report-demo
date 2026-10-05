@@ -3,9 +3,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>코트 노트 · 경기 리포트</title>
-<link rel="stylesheet" href="rally-report.css?v=20261005-stats">
-<script src="rally-data.js?v=20261005-stats" defer></script>
-<script src="rally-report.js?v=20261005-stats" defer></script>
+<link rel="stylesheet" href="rally-report.css?v=20261005-short">
+<script src="rally-data.js?v=20261005-short" defer></script>
+<script src="rally-report.js?v=20261005-short" defer></script>
 <style>
   :root { color-scheme: light; }
   html { -webkit-text-size-adjust: 100%; }
@@ -649,9 +649,7 @@
     <div class="hero">
       <div class="eyebrow">분석 리포트 · 2026-09-12 · hoyoung</div>
       <h1>서브 분석</h1>
-      <p class="lead" style="margin-top:12px">서브 한 개의 자세를 프로 데이터와 비교했습니다.
-        임팩트 팔 들림은 <b class="hl">123.0°</b>로 프로 평균 <b class="hl">140.0°</b>보다 17° 낮습니다.
-        한 번의 측정이므로 다른 서브에서도 같은 차이가 있는지 확인이 필요합니다.</p>
+      <p class="lead" style="margin-top:12px">프로 데이터와 서브 자세를 비교했습니다.</p>
       <div class="chips">
         <div class="chip"><i>영상</i><b>hoyoung_w</b></div>
         <div class="chip"><i>길이</i><b class="num">66프레임 / 30fps</b></div>
@@ -690,8 +688,7 @@
       <div class="eyebrow">한눈에</div>
       <h2>항목별 측정 결과</h2>
       <p class="lead">
-        막대는 프로 평균과의 차이를 표준편차 단위(z)로 표시합니다. 회색 띠는 ±1 SD 구간입니다.
-        프로 평균과 다르다는 이유만으로 자세가 잘못됐다고 판단할 수는 없습니다.
+        막대는 프로 평균과의 차이(z), 회색 띠는 ±1 SD 구간입니다.
       </p>
       <div class="card">
         <div class="triage">
@@ -700,8 +697,7 @@
             <div class="tally" id="tally"></div>
             <div class="verdict">
               <div class="k">확인할 항목</div>
-              <p><b>임팩트 팔 들림.</b> 이번 측정에서 프로 평균보다 낮게 나온 항목입니다.
-                영상과 추가 서브를 함께 확인해보세요.</p>
+              <p><b>임팩트 팔 들림</b>이 프로 평균보다 낮게 나왔습니다.</p>
             </div>
           </div>
         </div>
@@ -726,54 +722,20 @@
     <section class="block">
       <div class="eyebrow">연습 참고</div>
       <h2>임팩트 자세 확인</h2>
-      <p class="lead">
-        임팩트 장면과 토스 위치를 확인하는 방법입니다. 교정 여부는 추가 영상을 보고 정하세요.
-      </p>
-
       <div class="fix">
         <header>
           <span class="rank">확인 항목</span>
           <h3>임팩트 팔 들림</h3>
-          <span class="now">측정 <b>123°</b> / 프로 평균 140°</span>
         </header>
         <div class="body">
-          <div>
-            <h4>측정 결과</h4>
-            <p>임팩트 팔 들림은 <b class="hl">123.0°</b>, 프로 평균은 <b class="hl">140.0°</b>입니다.
-              프로 분포 기준 백분위는 12.6%입니다.</p>
-            <p>팔꿈치 펴짐은 150.5°(52.9%ile), 토스 팔 들림은 177.4°(89%ile)입니다.
-              팔꿈치 각도와 몸통·위팔 각도는 별도 항목입니다.</p>
-            <p>임팩트 무릎 각도는 173.2°로 프로 평균 173.0°와 비슷합니다.</p>
-          </div>
-          <div>
-            <h4>해보세요</h4>
+          <div class="span">
             <ol class="drills">
-              <li><div><b>임팩트 장면 확인</b> — 영상을 멈추고 몸통과 위팔의 각도를 확인합니다.</div></li>
-              <li><div><b>토스 위치 확인</b> — 토스의 높이와 앞뒤 위치가 서브마다 일정한지 봅니다.</div></li>
-              <li><div><b>여러 서브 비교</b> — 같은 촬영 조건에서 팔 들림이 반복되는지 확인합니다.</div></li>
+              <li><div>임팩트에서 몸통과 위팔의 위치를 확인하세요.</div></li>
+              <li><div>토스 위치가 일정한지 확인하세요.</div></li>
+              <li><div>같은 각도로 여러 서브를 찍어 비교하세요.</div></li>
             </ol>
           </div>
-          <div class="span">
-            <h4>해석 범위</h4>
-            <p>이번 측정은 자세 각도의 차이를 보여줍니다. 타점 높이나 서브 성공률이
-              달라지는지는 추가 영상과 결과를 확인해야 합니다.</p>
-          </div>
-          <div class="span check">
-            <h4>혼자 확인하는 법</h4>
-            <p>임팩트 프레임에서 위팔과 몸통의 위치를 확인하세요.
-              카메라 각도가 다르면 보이는 각도도 달라지므로 같은 조건에서 비교합니다.</p>
-          </div>
         </div>
-      </div>
-      <div class="warnbox">
-        <h3>연습 안내의 범위</h3>
-        <p style="margin:8px 0 0; font-size:13.5px; color:var(--ink-2)">
-          프로 데이터와의 각도 차이를 측정했습니다. 원인이나 교정 방법을 확정한 결과는 아닙니다.
-          연습 방법은 영상과 측정값을 참고해 코치와 정할 수 있습니다.
-        </p>
-        <p style="margin:10px 0 0; font-size:13.5px; color:var(--ink-2)">
-          서브 한 개의 결과입니다. 반복 측정에 필요한 수는 아래 ‘추가 촬영’에 표시했습니다.
-        </p>
       </div>
     </section>
 
@@ -1006,45 +968,6 @@
     </section>
 
     <section class="block">
-      <div class="eyebrow">분석 요약</div>
-      <h2>이번 측정에서 확인한 내용</h2>
-
-      <div class="coach">
-        <p class="open">
-          임팩트 팔 들림은 <b>123.0°</b>로 프로 평균 140.0°보다 낮습니다.
-        </p>
-
-        <p>
-          임팩트 무릎 각도는 173.2°, 팔꿈치 각도는 150.5°입니다.
-          두 값은 이번 비교에서 프로 평균과 비슷하게 나왔습니다.
-        </p>
-
-        <p class="hit">
-          <b>팔 들림과 팔꿈치 펴짐은 별도 항목입니다.</b>
-          팔꿈치가 펴져 있어도 몸통과 위팔의 각도는 다를 수 있습니다.
-        </p>
-
-        <p>
-          추가 영상에서 임팩트 자세와 토스 위치를 확인하세요.
-          자세를 바꾸기 전에는 이 차이가 여러 서브에서 반복되는지 보는 것이 좋습니다.
-        </p>
-
-        <p>
-          이번 분석은 토스 위치나 팔 들림 차이의 원인을 확정하지 않습니다.
-          구체적인 연습 방법은 영상과 측정값을 보고 코치와 정할 수 있습니다.
-        </p>
-
-        <p>
-          트로피 무릎 각도는 프로 선수 사이에서도 편차가 큽니다.
-          평균과의 차이만으로 교정 여부를 정하지 않습니다.
-        </p>
-
-        <p class="close">
-          상대의 임팩트 팔 들림은 117.1°(8.8%ile)입니다.
-          두 사람 모두 <b>서브 한 개</b>씩 측정했습니다. 반복되는 차이인지는 추가 촬영이 필요합니다.
-        </p>
-      </div>
-
       <details class="numbers">
         <summary>측정값 보기</summary>
         <div>
@@ -1079,7 +1002,8 @@
         라켓 속도·프로네이션·공 속도·회전·코스·부상 위험은 평가하지 않았습니다.
       </p>
       <p>
-        <b>연습 참고</b> · 자세를 확인하는 일반적인 방법입니다. 분석으로 확정된 교정 처방은 아닙니다.
+        <b>해석 범위</b> · 프로 평균과의 차이는 자세의 정답이나 실력 평가가 아닙니다.
+        범실 원인·교정 방법·성공률 변화는 이번 측정으로 판단하지 않습니다.
       </p>
     </div>
     </div>
